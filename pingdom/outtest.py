@@ -11,7 +11,7 @@ dct=OrderedDict()
 flag=True
 s=''
 
-url=pingdomlib.Pingdom('hosting_mgr@plateau.com','NjZhZjRmOGY3','3g9ohoi4jz3rt7tvfrwv6bng42y8ws6d')
+url=pingdomlib.Pingdom('username','password','secret key')
 
 choice=sys.argv[1]
 start_d=sys.argv[2]
@@ -56,15 +56,15 @@ day_e=int(e_date[2])
 check=url.getChecks()
 
 if DC == 'ALL':
-    if choice == 'MOBILE' or choice == 'JAM' or choice == 'ONB':
+    if choice == 'abc' or choice == 'xyz' or choice == 'pqr':
         D=['DC02','DC04','DC08','DC10','DC12','DC17','DC18','DC19']
-    elif choice == 'COMMUNITIES':
+    elif choice == 'lmn':
         D=['DC12','DC17']
-    elif choice=='J2W':
+    elif choice=='qwe':
         D=['DC12','RackSpace','DC17','DC19']
-    elif choice=='BIZX':
+    elif choice=='uio':
         D=['DC02','DC04','DC08','DC10','DC12','DC16','DC17','DC18','DC19']
-    elif choice=='WFA':
+    elif choice=='tre':
         D=["DC02","DC04","DC08","DC10","DC12","DC12B","DC171","DC17","DC18","DC19"]
            
 for i in check:
