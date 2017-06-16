@@ -1,0 +1,4 @@
+echo "" > /tmp/check.txt
+sed '/^$/d' /tmp/check.txt > /tmp/check.txt
+/tmp/check.sh >> /tmp/check.txt
+cat /tmp/check.txt

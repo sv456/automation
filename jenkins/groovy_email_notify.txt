@@ -1,0 +1,7 @@
+File file = new File("/tmp/check.txt");
+a=file.length();
+if (a == 0) {
+cancel=true
+} else {
+cancel=false
+}
