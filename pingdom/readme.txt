@@ -1,0 +1,1 @@
+This py file makes an api call to pingdom to fetch details about a particular in json format which is sent to php file to be displayed on web page
