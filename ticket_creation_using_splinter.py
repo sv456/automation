@@ -20,7 +20,7 @@ datet='-'.join(day_splitt)
     
 br = Browser('chrome')
 #br.driver.set_window_position(-10000,0)
-br.visit('http://sfsf.service-now.com/login')
+br.visit('http://xxxxx/login')
 br.click_link_by_text("Use external login")
 br.fill('sso_selector_id', 'abc@xxx.com')
 br.find_by_name('not_important').first.click()
