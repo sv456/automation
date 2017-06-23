@@ -71,14 +71,14 @@ def create_ticket(rum,sh,s,e):
         
 for dc in DC_num:
     if dc==12:
-        env='Communities DC12 Monsoon'
+        env='ABC'
         start=datef+" 02:00:00"
         end=datef+" 03:00:00"
         short_desc=env+" | Weekly Patch "+patch_no
         create_ticket(env,short_desc,start,end)
     
     elif dc==17:
-        env='Communities DC17'
+        env='ABC1'
         start=datet+" 17:00:00"
         end=datet+" 18:00:00"
         short_desc=env+" | Weekly Patch "+patch_no
