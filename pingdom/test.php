@@ -98,13 +98,13 @@ option{
 </style>
 <script language="javascript" type="text/javascript">
     var mealsByCategory = {
-	MOBILE: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
-	JAM:["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
-	ONB:["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
-    COMMUNITIES:["Select","ALL","DC12","DC17"],
-    J2W: ["Select","ALL","DC12", "RackSpace", "DC17", "DC19"],
-	BIZX: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC16","DC17","DC18","DC19"],
-	WFA: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC12B","DC171","DC17","DC18","DC19"],
+	ABC: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
+	BCD:["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
+	CDE:["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC17","DC18","DC19"],
+    DEF:["Select","ALL","DC12","DC17"],
+    EFG: ["Select","ALL","DC12", "RackSpace", "DC17", "DC19"],
+	FGH: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC16","DC17","DC18","DC19"],
+	GHI: ["Select","ALL","DC02","DC04","DC08","DC10","DC12","DC12B","DC171","DC17","DC18","DC19"],
 }
 
     function changecat(value) {
@@ -120,13 +120,13 @@ option{
 	
 	
 	var environment = {
-	MOBILE: ["Select","Prod","Preview","Sales","BOSCH"],
-	JAM:["Select","Prod","Sales"],
-	ONB:["Select","Prod","Preview","Sales","Stage"],
-    COMMUNITIES:["Select","Prod"],
-	J2W:["Select","Prod","Stage"],
-	BIZX: ["Select","Prod","Preview","Sales"],
-	WFA: ["Select","Prod","Preview","Sales"],
+	ABC: ["Select","Prod","Preview","Sales","BOSCH"],
+	BCD:["Select","Prod","Sales"],
+	CDE:["Select","Prod","Preview","Sales","Stage"],
+    DEF:["Select","Prod"],
+	EFG:["Select","Prod","Stage"],
+	FGH: ["Select","Prod","Preview","Sales"],
+	GHI: ["Select","Prod","Preview","Sales"],
 }
 
     function changeenv(value) {
@@ -151,13 +151,13 @@ option{
 <td align="left" width=200px> <b>Select The Product:</b> 
   <select name="product" id="product" onChange="changecat(this.value);changeenv(this.value);">
     <option value="" disabled selected>Select</option>
-	<option value="MOBILE">MOBILE</option>
-	<option value="JAM">JAM</option>
-	<option value="ONB">ONB</option>
-    <option value="COMMUNITIES">COMMUNITIES</option>
-    <option value="J2W">RMK</option>
-	<option value="BIZX">BIZX</option>
-	<option value="WFA">WFA</option>
+	<option value="ABC">ABC</option>
+	<option value="BCD">BCD</option>
+	<option value="CDE">CDE</option>
+    <option value="DEF">DEF</option>
+    <option value="EFG">EFG</option>
+	<option value="FGH">FGH</option>
+	<option value="GHI">GHI</option>
 </select></td>
 <td width=200px> <b>Select Data Center:</b> 
   <select name="dc" id="dc">
