@@ -1,6 +1,6 @@
 from jira import JIRA
 options={
-        'server':'https://jira.successfactors.com/',
+        'server':'https://jira.xxxxx.com/',
         }
 while True:
         try:
@@ -14,7 +14,7 @@ while True:
 
 lists=[]
 patch_no=raw_input("enter new patch number(eg:1701):")
-DC_num=[2,4,8,10,12,15,17,18,19]
+DC_num=[2,4]
 print 'enter implementation date in yyyy,mm,dd order and enter friday\'s date,script will adjust the date and time by itself'
 yr=raw_input('year:')
 mnth=raw_input('month:')
@@ -147,146 +147,7 @@ for i in range(9):
                                 start=datet+'T12:30:00.000-0700'
                                 end=datet+'T18:30:00.000-0700'
                                 assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==8:
-                actual_DC="DC"+str(DC)+' - '+"Ashburn1"
-                Ztime="21744"
-                data='No Data Protection Regulation'
-                env=['Prod','Sales','Preview']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Sales':
-                                actual_env='11930'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_env='17660'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==10:
-                actual_DC="DC"+str(DC)+' - '+"Sydney1"
-                Ztime="21746"
-                data='No Data Protection Regulation'
-                env=['Prod','Preview']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datef+'T02:30:00.000-0700'
-                                end=datef+'T08:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Sales':
-                                actual_env='11930'
-                                start=datef+'T02:30:00.000-0700'
-                                end=datef+'T08:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_env='17660'
-                                start=datef+'T02:30:00.000-0700'
-                                end=datef+'T08:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==12:
-                actual_DC="DC"+str(DC)+' - '+"Rot1"
-                Ztime="21745"
-                data='European Union Data Protection'
-                env=['Prod','Preview','Bosch']
-                for j in env:
-                        if j=='Prod':
-                                actual_DC="DC"+str(DC)+' - '+'Rot1(Monsoon)'
-                                actual_env='11668'
-                                start=datet+'T16:30:00.000-0700'
-                                end=datet+'T22:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_DC="DC"+str(DC)+' - '+'Rot1(Monsoon)'
-                                actual_env='17660'
-                                start=datet+'T16:30:00.000-0700'
-                                end=datet+'T22:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Bosch':
-                                actual_env='11668'
-                                start=datet+'T16:30:00.000-0700'
-                                end=datet+'T22:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==15:
-                actual_DC="DC"+str(DC)+' - '+"Shanghai1"
-                Ztime="21747"
-                data='No Data Protection Regulation'
-                env=['Prod']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datef+'T00:30:00.000-0700'
-                                end=datef+'T06:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==17:
-                actual_DC="DC"+str(DC)+' - '+"Toronto1"
-                Ztime="21744"
-                data='No Data Protection Regulation'
-                env=['Prod','Preview']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Sales':
-                                actual_env='11930'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_env='17660'
-                                start=datet+'T12:30:00.000-0700'
-                                end=datet+'T18:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-        elif DC==18:
-                actual_DC="DC"+str(DC)+' - '+"Moscow1"
-                Ztime="21748"
-                data='No Data Protection Regulation'
-                env=['Prod','Preview']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datet+'T19:30:00.000-0700'
-                                end=datef+'T01:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Sales':
-                                actual_env='11930'
-                                start=datet+'T19:30:00.000-0700'
-                                end=datef+'T01:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_env='17660'
-                                start=datet+'T19:30:00.000-0700'
-                                end=datef+'T01:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
 
-        elif DC==19:
-                actual_DC="DC"+str(DC)+' - '+"Sao Paulo1"
-                Ztime="21749"
-                data='No Data Protection Regulation'
-                env=['Prod','Preview']
-                for j in env:
-                        if j=='Prod':
-                                actual_env='11668'
-                                start=datet+'T18:00:00.000-0700'
-                                end=datet+'T20:00:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Sales':
-                                actual_env='11930'
-                                start=datet+'T18:30:00.000-0700'
-                                end=datet+'T20:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
-                        elif j=='Preview':
-                                actual_env='17660'
-                                start=datet+'T18:30:00.000-0700'
-                                end=datet+'T20:30:00.000-0700'
-                                assign_values(actual_DC,Ztime,actual_env,j,data,start,end)
 
 print lists
 print 'converting lists of CMSDs into string'
