@@ -75,7 +75,7 @@ def assign_values(a,b,c,d,data_protection,start,end):
                 'customfield_17683' : { 'value' : 'Low' },
                 'customfield_17684' : { 'value' : 'Low' },
                 'customfield_16583' : {'value':'App', 'child': {'value':'Update/Upgrade'}},
-                'components' : [{'name': 'Mobile'}],
+                'components' : [{'name': 'ABC'}],
                 'customfield_15282' : {'value':data_protection},
                 'customfield_10802' : { 'value' : a },
                 'customfield_16590' : { 'id' : Ztime },
@@ -92,9 +92,9 @@ def assign_values(a,b,c,d,data_protection,start,end):
                 'customfield_17058' : imp_steps,
                 'customfield_16800' : back_steps,
                 'customfield_16801' : validate,
-                'customfield_16802' : { 'name' : 'skumari' },
-                'customfield_17059' : [{ 'value' : 'TechOwn - Mobile' }],
-                'customfield_17060' : [{ 'value' : 'BusOwn - Mobile' }],
+                'customfield_16802' : { 'name' : 'jira name' },
+                'customfield_17059' : [{ 'value' : 'TechOwn - ABC' }],
+                'customfield_17060' : [{ 'value' : 'BusOwn - ABC' }],
                                         }
         new_issue = jira.create_issue(fields=values)
         jira.assign_issue(new_issue, 'jira name')
