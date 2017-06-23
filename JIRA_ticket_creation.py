@@ -103,7 +103,7 @@ def assign_values(a,b,c,d,data_protection,start,end):
         #print key
         lists.append(key)
 
-for i in range(9):
+for i in range(2):
         DC=DC_num[i]
         if DC==2:
                 actual_DC="DC"+str(DC)+' - '+"Amsterdam2"
